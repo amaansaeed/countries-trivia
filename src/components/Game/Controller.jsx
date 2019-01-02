@@ -20,7 +20,7 @@ const Timer = styled.div`
   border-radius: 4px;
 
   text-align: center;
-  font-size: 35px;
+  font-size: 32px;
 
   & div {
     height: max-content;

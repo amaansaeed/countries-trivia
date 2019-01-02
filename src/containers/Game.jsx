@@ -23,6 +23,7 @@ import {
 //  data
 import countries from "../data/countries.json"
 import colours from "../data/colours.json"
+import Victory from "../components/Game/Victory"
 
 class Game extends Component {
   maxZoom = 5
@@ -36,6 +37,7 @@ class Game extends Component {
     showHint: false,
     pause: false,
     gameOver: false,
+    victory: false,
     countriesGuessed: [],
     countriesRemaining: [],
     scores: {
@@ -79,14 +81,22 @@ class Game extends Component {
     let { timeRemaining } = this.state
     timeRemaining = timeRemaining + this.correctAnswerBonusTime
 
-    this.setState({
-      countriesGuessed: countriesGuessed,
-      scores: scores,
-      timeRemaining: timeRemaining,
-      currentSearch: "",
-      showHint: false,
-      cssString: colourGuessed(countriesGuessed, countries, colours)
-    })
+    this.setState(
+      {
+        countriesGuessed: countriesGuessed,
+        scores: scores,
+        timeRemaining: timeRemaining,
+        currentSearch: "",
+        showHint: false,
+        cssString: colourGuessed(countriesGuessed, countries, colours)
+      },
+      () => {
+        const { countriesGuessed } = this.state
+        if (countriesGuessed.length === 192) {
+          this.setState({ victory: true, timeRemaining: 0 })
+        }
+      }
+    )
   }
 
   handleGameOver = () => {
@@ -125,7 +135,7 @@ class Game extends Component {
   handleControllerClick = ({ currentTarget: input }) => {
     console.log(input.name)
 
-    if (input.name === "hint") {
+    if (input.name === "hint" && !this.state.pause) {
       this.setState({ showHint: !this.state.showHint })
     }
 
@@ -134,7 +144,7 @@ class Game extends Component {
     }
 
     if (input.name === "pause") {
-      this.setState({ pause: !this.state.pause })
+      this.setState({ pause: !this.state.pause, showHint: false })
     }
 
     if (input.name === "zoom-in") {
@@ -154,31 +164,44 @@ class Game extends Component {
     return (
       <React.Fragment>
         <MapColours cssString={this.state.cssString} />
-        <MapZoom zoom={this.state.zoom} />
 
-        <SearchBar
-          pause={this.state.pause}
-          value={this.state.currentSearch}
-          handleChange={this.handleSearch}
-        />
+        {this.state.victory || this.state.gameOver ? null : (
+          <React.Fragment>
+            <MapZoom zoom={this.state.zoom} />
 
-        <Scoreboard {...this.state.scores} />
+            <SearchBar
+              pause={this.state.pause}
+              value={this.state.currentSearch}
+              handleChange={this.handleSearch}
+            />
 
-        <Zoom handleClick={this.handleControllerClick} />
+            <Scoreboard {...this.state.scores} />
 
-        <Controller
-          time={formatTime(this.state.timeRemaining)}
-          pause={this.state.pause}
-          showHint={this.state.showHint}
-          handleClick={this.handleControllerClick}
-        />
+            <Zoom handleClick={this.handleControllerClick} />
 
-        <Hint
-          show={this.state.showHint}
-          hint={getCountryFromCode(this.props.selectedCountry, countries)}
-        />
+            <Controller
+              time={formatTime(this.state.timeRemaining)}
+              pause={this.state.pause}
+              showHint={this.state.showHint}
+              handleClick={this.handleControllerClick}
+            />
 
-        <GameOver show={this.state.gameOver} countries={this.state.countriesRemaining} />
+            <Hint
+              show={this.state.showHint}
+              hint={getCountryFromCode(this.props.selectedCountry, countries)}
+            />
+          </React.Fragment>
+        )}
+
+        <Victory show={this.state.victory} />
+
+        {this.state.victory ? null : (
+          <GameOver
+            show={this.state.gameOver}
+            score={this.state.countriesGuessed.length}
+            countries={this.state.countriesRemaining}
+          />
+        )}
       </React.Fragment>
     )
   }

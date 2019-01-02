@@ -24,11 +24,15 @@ const Title = styled.div`
   font-size: 40px;
   text-align: center;
   padding-bottom: 25px;
+
+  & hr {
+    width: 60%;
+  }
 `
 
 const Rules = styled.div`
   & p {
-    margin: 0px;
+    /* margin: 0px; */
   }
 `
 
@@ -53,31 +57,41 @@ const Button = styled.div`
   }
 `
 
+const Subtitle = styled.div`
+  font-weight: 600;
+`
+
 const Centered = styled.div`
   position: relative;
-  top: 50%;
+  top: 40%;
   transform: translate(0%, -50%);
+`
+
+const Right = styled.div`
+  text-align: right;
 `
 
 const StartingScreen = ({ handleClick }) => {
   return (
     <Wrapper>
-      <Title>Countries Trivia</Title>
+      <Title>
+        Countries Trivia
+        <hr />
+      </Title>
       <Rules>
         <Centered>
-          How many Countries can you name? The game is simple...
-          <ul>
-            <li>You have 3 minutes to try and name all the countries of the world.</li>
-            <li>
-              To enter your guess simply type the name in the text-box hovering over Northern
-              Canada.
-            </li>
-            <li>Each correct guess gives you an additonal 5 seconds.</li>
-            <li>
-              For a hint, press the hint button and click on a country to find out its Capital city.
-            </li>
-          </ul>
-          <div>Good Luck!</div>
+          <Subtitle>How many Countries can you name? The game is simple...</Subtitle>
+          <p>
+            - You have 3 minutes to try and name all the countries of the world.
+            <br />
+            - To enter your guess simply type the name in the text-box hovering over Northern
+            Canada.
+            <br />
+            - Each correct guess gives you an additonal 5 seconds.
+            <br />- For a hint, press the hint button and click on a country to find out its Capital
+            city.
+          </p>
+          <Right>Good Luck!</Right>
         </Centered>
       </Rules>
       <Button>
