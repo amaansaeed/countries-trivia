@@ -42,7 +42,7 @@ export const getRegion = region => {
   }
 }
 
-export const updateCss = (countriesGuessedArray, countries, coloursArray) => {
+export const colourGuessed = (countriesGuessedArray, countries, coloursArray) => {
   let countryL = ["", "", "", "", "", ""]
   let colorL = []
 
@@ -69,4 +69,66 @@ export const updateCss = (countriesGuessedArray, countries, coloursArray) => {
   }
 
   return cssString
+}
+
+export const colourAll = (countriesList, coloursArray) => {
+  let cssColor1 = "",
+    cssColor2 = "",
+    cssColor3 = "",
+    cssColor4 = "",
+    cssColor5 = "",
+    cssColor6 = ""
+
+  let cl1 = " {fill: " + coloursArray[0] + " !important;} ",
+    cl2 = " {fill: " + coloursArray[1] + " !important;} ",
+    cl3 = " {fill: " + coloursArray[2] + " !important;} ",
+    cl4 = " {fill: " + coloursArray[3] + " !important;} ",
+    cl5 = " {fill: " + coloursArray[4] + " !important;} ",
+    cl6 = " {fill: " + coloursArray[5] + " !important;} "
+
+  for (let country in countriesList) {
+    let code = countriesList[country].code
+    let color = countriesList[country].color
+    switch (color) {
+      case 1:
+        cssColor1 = cssColor1 + "." + code + ", "
+        break
+      case 2:
+        cssColor2 = cssColor2 + "." + code + ", "
+        break
+      case 3:
+        cssColor3 = cssColor3 + "." + code + ", "
+        break
+      case 4:
+        cssColor4 = cssColor4 + "." + code + ", "
+        break
+      case 5:
+        cssColor5 = cssColor5 + "." + code + ", "
+        break
+      case 6:
+        cssColor6 = cssColor6 + "." + code + ", "
+        break
+      default:
+        break
+    }
+  }
+  var updateColor1 = cssColor1.slice(0, -2) + cl1
+  var updateColor2 = cssColor2.slice(0, -2) + cl2
+  var updateColor3 = cssColor3.slice(0, -2) + cl3
+  var updateColor4 = cssColor4.slice(0, -2) + cl4
+  var updateColor5 = cssColor5.slice(0, -2) + cl5
+  var updateColor6 = cssColor6.slice(0, -2) + cl6
+
+  var updateColor =
+    updateColor1 + updateColor2 + updateColor3 + updateColor4 + updateColor5 + updateColor6
+
+  return updateColor
+}
+
+export const getCountryFromCode = (code, countryList) => {
+  for (let c in countryList) {
+    if (countryList[c].code === code) {
+      return countryList[c].capital
+    }
+  }
 }

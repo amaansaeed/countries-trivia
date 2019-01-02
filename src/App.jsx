@@ -5,22 +5,29 @@ import Map from "./components/Map/Map"
 
 //  components
 import StartingScreen from "./components/StartingScreen"
-import Game from "./components/Game"
+import Game from "./containers/Game"
 
 class App extends Component {
-  state = { start: false }
+  state = { start: false, selectedCountry: "" }
 
   startGame = () => {
     this.setState({ start: true })
   }
 
+  selectCountry = ({ target: input }) => {
+    this.setState({ selectedCountry: input.parentNode.id })
+  }
+
   render() {
     return (
       <div className="App">
-        {this.state.start ? null : <StartingScreen handleClick={this.startGame} />}
-        <Game show={this.state.start} />
+        {this.state.start ? (
+          <Game selectedCountry={this.state.selectedCountry} />
+        ) : (
+          <StartingScreen handleClick={this.startGame} />
+        )}
 
-        <Map />
+        <Map handleClick={this.selectCountry} />
       </div>
     )
   }

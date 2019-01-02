@@ -35,29 +35,42 @@ const Button = styled.button`
   background: rgba(255, 255, 255, 0.6);
   border: 1px solid black;
   border-radius: 4px;
+  cursor: pointer;
 
   font-size: 15px;
+`
+
+const Pause = styled(Button)`
   ${props =>
     !props.pause
       ? "background: rgba(255, 255, 255, 0.6); color: black;"
       : "background: rgba(0, 0, 0, 0.6); color: white;"}
 `
 
-const Controller = ({ time, pause, handleClick }) => {
+const Hint = styled(Button)`
+  ${props =>
+    !props.showHint
+      ? "background: rgba(255, 255, 255, 0.6); color: black;"
+      : "background: rgba(0, 0, 0, 0.6); color: white;"}
+`
+
+const Quit = styled(Button)``
+
+const Controller = ({ time, showHint, pause, handleClick }) => {
   return (
     <Wrapper>
       <Timer>
         <div>{time}</div>
       </Timer>
-      <Button pause={pause} name="pause" onClick={handleClick}>
-        {pause ? "Pause" : "Resume"}
-      </Button>
-      <Button name="hint" onClick={handleClick}>
+      <Pause pause={pause} name="pause" onClick={handleClick}>
+        {!pause ? "Pause" : "Resume"}
+      </Pause>
+      <Hint showHint={showHint} name="hint" onClick={handleClick}>
         Hint
-      </Button>
-      <Button name="quit" onClick={handleClick}>
+      </Hint>
+      <Quit name="quit" onClick={handleClick}>
         Give Up
-      </Button>
+      </Quit>
     </Wrapper>
   )
 }

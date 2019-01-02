@@ -1,7 +1,7 @@
 import React from "react"
 
-const MapColours = props => {
-  return <React.Fragment>{React.createElement("style", {}, props.cssString)}</React.Fragment>
+const MapColours = ({ cssString }) => {
+  return <React.Fragment>{React.createElement("style", {}, cssString)}</React.Fragment>
 }
 
 export default MapColours

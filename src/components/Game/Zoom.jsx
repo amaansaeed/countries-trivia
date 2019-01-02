@@ -26,6 +26,7 @@ const Button = styled.button`
   border: 1px solid black;
   background: white;
   opacity: 0.8;
+  cursor: pointer;
 
   font-size: 20px;
 `
