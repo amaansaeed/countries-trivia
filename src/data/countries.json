@@ -1,0 +1,973 @@
+{
+  "canada": {
+    "code": "ca",
+    "region": "north america",
+    "color": 5
+  },
+  "united states": {
+    "code": "us",
+    "region": "north america",
+    "color": 3
+  },
+  "mexico": {
+    "code": "mx",
+    "region": "north america",
+    "color": 2
+  },
+  "belize": {
+    "code": "bz",
+    "region": "central america",
+    "color": 4
+  },
+  "guatemala": {
+    "code": "gt",
+    "region": "central america",
+    "color": 1
+  },
+  "honduras": {
+    "code": "hn",
+    "region": "central america",
+    "color": 3
+  },
+  "el salvador": {
+    "code": "sv",
+    "region": "central america",
+    "color": 5
+  },
+  "nicaragua": {
+    "code": "ni",
+    "region": "central america",
+    "color": 6
+  },
+  "costa rica": {
+    "code": "cr",
+    "region": "central america",
+    "color": 2
+  },
+  "panama": {
+    "code": "pa",
+    "region": "central america",
+    "color": 3
+  },
+  "argentina": {
+    "code": "ar",
+    "region": "south america",
+    "color": 4
+  },
+  "brazil": {
+    "code": "br",
+    "region": "south america",
+    "color": 3
+  },
+  "peru": {
+    "code": "pe",
+    "region": "south america",
+    "color": 1
+  },
+  "chile": {
+    "code": "cl",
+    "region": "south america",
+    "color": 6
+  },
+  "paraguay": {
+    "code": "py",
+    "region": "south america",
+    "color": 5
+  },
+  "uruguay": {
+    "code": "uy",
+    "region": "south america",
+    "color": 1
+  },
+  "bolivia": {
+    "code": "bo",
+    "region": "south america",
+    "color": 2
+  },
+  "ecuador": {
+    "code": "ec",
+    "region": "south america",
+    "color": 3
+  },
+  "colombia": {
+    "code": "co",
+    "region": "south america",
+    "color": 4
+  },
+  "venezuela": {
+    "code": "ve",
+    "region": "south america",
+    "color": 6
+  },
+  "suriname": {
+    "code": "sr",
+    "region": "south america",
+    "color": 6
+  },
+  "guayana": {
+    "code": "gy",
+    "region": "south america",
+    "color": 4
+  },
+  "iceland": {
+    "code": "is",
+    "region": "europe",
+    "color": 4
+  },
+  "ireland": {
+    "code": "ie",
+    "region": "british isles",
+    "color": 3
+  },
+  "united kingdom": {
+    "code": "gb",
+    "region": "british isles",
+    "color": 4
+  },
+  "portugal": {
+    "code": "pt",
+    "region": "iberian peninsula",
+    "color": 6
+  },
+  "spain": {
+    "code": "es",
+    "region": "iberian peninsula",
+    "color": 3
+  },
+  "andorra": {
+    "code": "ad",
+    "region": "iberian peninsula",
+    "color": 1
+  },
+
+  "france": {
+    "code": "fr",
+    "region": "europe",
+    "color": 5
+  },
+  "monaco": {
+    "code": "mc",
+    "region": "europe",
+    "color": 1
+  },
+  "belgium": {
+    "code": "be",
+    "region": "be-ne-lux",
+    "color": 1
+  },
+  "luxembourg": {
+    "code": "lu",
+    "region": "be-ne-lux",
+    "color": 3
+  },
+  "netherlands": {
+    "code": "nl",
+    "region": "be-ne-lux",
+    "color": 6
+  },
+
+  "germany": {
+    "code": "de",
+    "region": "europe",
+    "color": 2
+  },
+  "switzerland": {
+    "code": "ch",
+    "region": "europe",
+    "color": 3
+  },
+  "liechtenstein": {
+    "code": "li",
+    "region": "europe",
+    "color": 1
+  },
+  "italy": {
+    "code": "it",
+    "region": "europe",
+    "color": 6
+  },
+  "san marino": {
+    "code": "sm",
+    "region": "europe",
+    "color": 1
+  },
+  "vatican": {
+    "code": "va",
+    "region": "europe",
+    "color": 1
+  },
+  "malta": {
+    "code": "mt",
+    "region": "europe",
+    "color": 1
+  },
+  "norway": {
+    "code": "no",
+    "region": "scandanavia",
+    "color": 5
+  },
+  "sweden": {
+    "code": "se",
+    "region": "scandanavia",
+    "color": 4
+  },
+  "finland": {
+    "code": "fi",
+    "region": "scandanavia",
+    "color": 2
+  },
+  "denmark": {
+    "code": "dk",
+    "region": "scandanavia",
+    "color": 6
+  },
+  "estonia": {
+    "code": "ee",
+    "region": "baltic states",
+    "color": 4
+  },
+  "latvia": {
+    "code": "lv",
+    "region": "baltic states",
+    "color": 1
+  },
+  "lithuania": {
+    "code": "lt",
+    "region": "baltic states",
+    "color": 5
+  },
+
+  "poland": {
+    "code": "pl",
+    "region": "europe",
+    "color": 6
+  },
+  "czech republic": {
+    "code": "cz",
+    "region": "europe",
+    "color": 3
+  },
+  "slovakia": {
+    "code": "sk",
+    "region": "europe",
+    "color": 1
+  },
+  "austria": {
+    "code": "at",
+    "region": "europe",
+    "color": 4
+  },
+  "hungary": {
+    "code": "hu",
+    "region": "europe",
+    "color": 6
+  },
+  "slovenia": {
+    "code": "si",
+    "region": "europe",
+    "color": 2
+  },
+  "belarus": {
+    "code": "by",
+    "region": "europe",
+    "color": 4
+  },
+  "ukraine": {
+    "code": "ua",
+    "region": "europe",
+    "color": 5
+  },
+  "moldova": {
+    "code": "md",
+    "region": "europe",
+    "color": 2
+  },
+  "romania": {
+    "code": "ro",
+    "region": "europe",
+    "color": 3
+  },
+  "croatia": {
+    "code": "hr",
+    "region": "balkan states",
+    "color": 3
+  },
+  "bosnia and herzegovina": {
+    "code": "ba",
+    "region": "balkan states",
+    "color": 6
+  },
+  "serbia": {
+    "code": "rs",
+    "region": "balkan states",
+    "color": 2
+  },
+  "montenegro": {
+    "code": "me",
+    "region": "balkan states",
+    "color": 1
+  },
+  "kosovo": {
+    "code": "kosovo",
+    "region": "balkan states",
+    "color": 3
+  },
+  "albania": {
+    "code": "al",
+    "region": "balkan states",
+    "color": 5
+  },
+  "macedonia": {
+    "code": "mk",
+    "region": "balkan states",
+    "color": 4
+  },
+  "bulgaria": {
+    "code": "bg",
+    "region": "balkan states",
+    "color": 6
+  },
+  "greece": {
+    "code": "gr",
+    "region": "balkan states",
+    "color": 3
+  },
+  "turkey": {
+    "code": "tr",
+    "region": "balkan states",
+    "color": 5
+  },
+  "cyprus": {
+    "code": "cy",
+    "region": "balkan states",
+    "color": 1
+  },
+
+  "russia": {
+    "code": "ru",
+    "region": "europe",
+    "color": 3
+  },
+  "georgia": {
+    "code": "ge",
+    "region": "caucasus",
+    "color": 4
+  },
+  "armenia": {
+    "code": "am",
+    "region": "caucasus",
+    "color": 2
+  },
+  "azerbaijan": {
+    "code": "az",
+    "region": "caucasus",
+    "color": 1
+  },
+  "syria": {
+    "code": "sy",
+    "region": "middle east",
+    "color": 6
+  },
+  "iraq": {
+    "code": "iq",
+    "region": "middle east",
+    "color": 2
+  },
+  "lebanon": {
+    "code": "lb",
+    "region": "middle east",
+    "color": 4
+  },
+  "jordan": {
+    "code": "jo",
+    "region": "middle east",
+    "color": 5
+  },
+  "israel": {
+    "code": "il",
+    "region": "middle east",
+    "color": 2
+  },
+  "palestine": {
+    "code": "ps",
+    "region": "middle east",
+    "color": 3
+  },
+  "kuwait": {
+    "code": "kw",
+    "region": "middle east",
+    "color": 1
+  },
+  "saudi arabia": {
+    "code": "sa",
+    "region": "middle east",
+    "color": 3
+  },
+  "bahrain": {
+    "code": "bh",
+    "region": "middle east",
+    "color": 1
+  },
+  "qatar": {
+    "code": "qa",
+    "region": "middle east",
+    "color": 1
+  },
+  "oman": {
+    "code": "om",
+    "region": "middle east",
+    "color": 5
+  },
+  "yemen": {
+    "code": "ye",
+    "region": "middle east",
+    "color": 4
+  },
+  "united arab emirates": {
+    "code": "ae",
+    "region": "middle east",
+    "color": 2
+  },
+  "iran": {
+    "code": "ir",
+    "region": "asia",
+    "color": 6
+  },
+  "kazakhstan": {
+    "code": "kz",
+    "region": "asia",
+    "color": 4
+  },
+  "uzbekistan": {
+    "code": "uz",
+    "region": "asia",
+    "color": 5
+  },
+  "kyrgyzstan": {
+    "code": "kg",
+    "region": "asia",
+    "color": 3
+  },
+  "tajikistan": {
+    "code": "tj",
+    "region": "asia",
+    "color": 1
+  },
+  "turkmenistan": {
+    "code": "tm",
+    "region": "asia",
+    "color": 3
+  },
+  "afghanistan": {
+    "code": "af",
+    "region": "asia",
+    "color": 2
+  },
+  "pakistan": {
+    "code": "pk",
+    "region": "asia",
+    "color": 3
+  },
+  "india": {
+    "code": "in",
+    "region": "asia",
+    "color": 2
+  },
+  "nepal": {
+    "code": "np",
+    "region": "asia",
+    "color": 5
+  },
+  "sri lanka": {
+    "code": "lk",
+    "region": "asia",
+    "color": 1
+  },
+  "maldives": {
+    "code": "mv",
+    "region": "asia",
+    "color": 1
+  },
+  "bangladesh": {
+    "code": "bd",
+    "region": "asia",
+    "color": 3
+  },
+  "bhutan": {
+    "code": "bt",
+    "region": "asia",
+    "color": 1
+  },
+
+  "myanmar": {
+    "code": "mm",
+    "region": "asia",
+    "color": 4
+  },
+  "mongolia": {
+    "code": "mn",
+    "region": "asia",
+    "color": 5
+  },
+  "china": {
+    "code": "cn",
+    "region": "asia",
+    "color": 6
+  },
+  "japan": {
+    "code": "jp",
+    "region": "asia",
+    "color": 1
+  },
+  "taiwan": {
+    "code": "tw",
+    "region": "asia",
+    "color": 3
+  },
+  "north korea": {
+    "code": "kp",
+    "region": "asia",
+    "color": 4
+  },
+  "south korea": {
+    "code": "kr",
+    "region": "asia",
+    "color": 2
+  },
+
+  "cambodia": {
+    "code": "kh",
+    "region": "asia",
+    "color": 4
+  },
+  "laos": {
+    "code": "la",
+    "region": "asia",
+    "color": 2
+  },
+  "thailand": {
+    "code": "th",
+    "region": "asia",
+    "color": 1
+  },
+  "vietnam": {
+    "code": "vn",
+    "region": "asia",
+    "color": 3
+  },
+  "malaysia": {
+    "code": "my",
+    "region": "asia",
+    "color": 5
+  },
+  "singapore": {
+    "code": "sg",
+    "region": "asia",
+    "color": 1
+  },
+  "philippines": {
+    "code": "ph",
+    "region": "asia",
+    "color": 4
+  },
+  "indonesia": {
+    "code": "id",
+    "region": "asia",
+    "color": 3
+  },
+  "brunei": {
+    "code": "bn",
+    "region": "asia",
+    "color": 1
+  },
+  "timor leste": {
+    "code": "tl",
+    "region": "asia",
+    "color": 1
+  },
+  "ethiopia": {
+    "code": "et",
+    "region": "africa",
+    "color": 3
+  },
+  "tanzania": {
+    "code": "tz",
+    "region": "africa",
+    "color": 5
+  },
+  "kenya": {
+    "code": "ke",
+    "region": "africa",
+    "color": 4
+  },
+  "uganda": {
+    "code": "ug",
+    "region": "africa",
+    "color": 6
+  },
+  "mozambique": {
+    "code": "mz",
+    "region": "africa",
+    "color": 2
+  },
+  "madagascar": {
+    "code": "mg",
+    "region": "africa",
+    "color": 6
+  },
+  "malawi": {
+    "code": "mw",
+    "region": "africa",
+    "color": 1
+  },
+  "zambia": {
+    "code": "zm",
+    "region": "africa",
+    "color": 4
+  },
+  "zimbabwe": {
+    "code": "zw",
+    "region": "africa",
+    "color": 6
+  },
+  "somalia": {
+    "code": "so",
+    "region": "africa",
+    "color": 6
+  },
+  "south sudan": {
+    "code": "ss",
+    "region": "africa",
+    "color": 2
+  },
+  "rwanda": {
+    "code": "rw",
+    "region": "africa",
+    "color": 2
+  },
+  "burundi": {
+    "code": "bi",
+    "region": "africa",
+    "color": 1
+  },
+  "eritrea": {
+    "code": "er",
+    "region": "africa",
+    "color": 2
+  },
+  "mauritius": {
+    "code": "mu",
+    "region": "africa",
+    "color": 3
+  },
+  "djibouti": {
+    "code": "dj",
+    "region": "africa",
+    "color": 1
+  },
+  "comoros": {
+    "code": "km",
+    "region": "africa",
+    "color": 2
+  },
+  "seychelles": {
+    "code": "sc",
+    "region": "africa",
+    "color": 1
+  },
+  "dr congo": {
+    "code": "cd",
+    "region": "africa",
+    "color": 3
+  },
+  "angola": {
+    "code": "ao",
+    "region": "africa",
+    "color": 6
+  },
+  "cameroon": {
+    "code": "cm",
+    "region": "africa",
+    "color": 3
+  },
+  "chad": {
+    "code": "td",
+    "region": "africa",
+    "color": 6
+  },
+  "congo": {
+    "code": "cg",
+    "region": "africa",
+    "color": 5
+  },
+  "central african republic": {
+    "code": "cf",
+    "region": "africa",
+    "color": 4
+  },
+  "gabon": {
+    "code": "ga",
+    "region": "africa",
+    "color": 2
+  },
+  "equatorial guinea": {
+    "code": "gq",
+    "region": "africa",
+    "color": 4
+  },
+  "sao tome and principe": {
+    "code": "st",
+    "region": "africa",
+    "color": 5
+  },
+  "egypt": {
+    "code": "eg",
+    "region": "africa",
+    "color": 4
+  },
+  "algeria": {
+    "code": "dz",
+    "region": "africa",
+    "color": 6
+  },
+  "sudan": {
+    "code": "sd",
+    "region": "africa",
+    "color": 5
+  },
+  "morocco": {
+    "code": "ma",
+    "region": "africa",
+    "color": 5
+  },
+  "tunisia": {
+    "code": "tn",
+    "region": "africa",
+    "color": 3
+  },
+  "libya": {
+    "code": "ly",
+    "region": "africa",
+    "color": 2
+  },
+  "south africa": {
+    "code": "za",
+    "region": "africa",
+    "color": 5
+  },
+  "namibia": {
+    "code": "na",
+    "region": "africa",
+    "color": 3
+  },
+  "botswana": {
+    "code": "bw",
+    "region": "africa",
+    "color": 2
+  },
+  "lesotho": {
+    "code": "ls",
+    "region": "africa",
+    "color": 3
+  },
+  "swaziland": {
+    "code": "sz",
+    "region": "africa",
+    "color": 1
+  },
+  "nigeria": {
+    "code": "ng",
+    "region": "africa",
+    "color": 2
+  },
+  "ghana": {
+    "code": "gh",
+    "region": "africa",
+    "color": 3
+  },
+  "ivory coast": {
+    "code": "ci",
+    "region": "africa",
+    "color": 2
+  },
+  "niger": {
+    "code": "ne",
+    "region": "africa",
+    "color": 3
+  },
+  "burkina faso": {
+    "code": "bf",
+    "region": "africa",
+    "color": 6
+  },
+  "mali": {
+    "code": "ml",
+    "region": "africa",
+    "color": 5
+  },
+  "senegal": {
+    "code": "sn",
+    "region": "africa",
+    "color": 6
+  },
+  "guinea": {
+    "code": "gn",
+    "region": "africa",
+    "color": 3
+  },
+  "benin": {
+    "code": "bj",
+    "region": "africa",
+    "color": 5
+  },
+  "togo": {
+    "code": "tg",
+    "region": "africa",
+    "color": 4
+  },
+  "sierra leone": {
+    "code": "sl",
+    "region": "africa",
+    "color": 4
+  },
+  "liberia": {
+    "code": "lr",
+    "region": "africa",
+    "color": 5
+  },
+  "mauritania": {
+    "code": "mr",
+    "region": "africa",
+    "color": 3
+  },
+  "gambia": {
+    "code": "gm",
+    "region": "africa",
+    "color": 1
+  },
+  "guinea-bissau": {
+    "code": "gw",
+    "region": "africa",
+    "color": 2
+  },
+  "cabo verde": {
+    "code": "cv",
+    "region": "africa",
+    "color": 3
+  },
+  "western sahara": {
+    "code": "eh",
+    "region": "africa",
+    "color": 2
+  },
+  "australia": {
+    "code": "au",
+    "region": "oceania",
+    "color": 5
+  },
+  "new zealand": {
+    "code": "nz",
+    "region": "oceania",
+    "color": 4
+  },
+  "papua new guinea": {
+    "code": "pg",
+    "region": "oceania",
+    "color": 2
+  },
+  "fiji": {
+    "code": "fj",
+    "region": "oceania",
+    "color": 1
+  },
+  "solomon islands": {
+    "code": "sb",
+    "region": "oceania",
+    "color": 2
+  },
+  "vanuatu": {
+    "code": "vu",
+    "region": "oceania",
+    "color": 3
+  },
+  "micronesia": {
+    "code": "fm",
+    "region": "oceania",
+    "color": 4
+  },
+  "nauru": {
+    "code": "nr",
+    "region": "oceania",
+    "color": 1
+  },
+  "samao": {
+    "code": "ws",
+    "region": "oceania",
+    "color": 1
+  },
+  "tonga": {
+    "code": "to",
+    "region": "oceania",
+    "color": 1
+  },
+  "cuba": {
+    "code": "cu",
+    "region": "caribbean",
+    "color": 5
+  },
+  "haiti": {
+    "code": "ht",
+    "region": "caribbean",
+    "color": 1
+  },
+  "dominican republic": {
+    "code": "do",
+    "region": "caribbean",
+    "color": 3
+  },
+  "jamaica": {
+    "code": "jm",
+    "region": "caribbean",
+    "color": 4
+  },
+  "trinidad and tobago": {
+    "code": "tt",
+    "region": "caribbean",
+    "color": 5
+  },
+  "bahamas": {
+    "code": "bs",
+    "region": "caribbean",
+    "color": 6
+  },
+  "barbados": {
+    "code": "bb",
+    "region": "caribbean",
+    "color": 1
+  },
+  "st lucia": {
+    "code": "lc",
+    "region": "caribbean",
+    "color": 2
+  },
+  "grenada": {
+    "code": "gd",
+    "region": "caribbean",
+    "color": 3
+  },
+  "antigua and barbuda": {
+    "code": "ag",
+    "region": "caribbean",
+    "color": 4
+  },
+  "dominica": {
+    "code": "dm",
+    "region": "caribbean",
+    "color": 5
+  },
+  "st kitts and nevis": {
+    "code": "kn",
+    "region": "caribbean",
+    "color": 6
+  }
+}
