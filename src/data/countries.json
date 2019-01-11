@@ -168,7 +168,7 @@
     "color": 1
   },
   "france": {
-    "code": "fr",
+    "code": "fx",
     "capital": "paris",
     "region": "europe",
     "color": 5
@@ -805,91 +805,91 @@
   },
   "dr congo": {
     "code": "cd",
-    "capital": "",
+    "capital": "kinshasa",
     "region": "africa",
     "color": 3
   },
   "angola": {
     "code": "ao",
-    "capital": "",
+    "capital": "luanda",
     "region": "africa",
     "color": 6
   },
   "cameroon": {
     "code": "cm",
-    "capital": "",
+    "capital": "yaoundé",
     "region": "africa",
     "color": 3
   },
   "chad": {
     "code": "td",
-    "capital": "",
+    "capital": "n'djamena",
     "region": "africa",
     "color": 6
   },
   "congo": {
     "code": "cg",
-    "capital": "",
+    "capital": "brazzaville",
     "region": "africa",
     "color": 5
   },
   "central african republic": {
     "code": "cf",
-    "capital": "",
+    "capital": "bangui",
     "region": "africa",
     "color": 4
   },
   "gabon": {
     "code": "ga",
-    "capital": "",
+    "capital": "libreville",
     "region": "africa",
     "color": 2
   },
   "equatorial guinea": {
     "code": "gq",
-    "capital": "",
+    "capital": "malabo",
     "region": "africa",
     "color": 4
   },
   "sao tome and principe": {
     "code": "st",
-    "capital": "",
+    "capital": "são tomé",
     "region": "africa",
     "color": 5
   },
   "egypt": {
     "code": "eg",
-    "capital": "",
+    "capital": "cairo",
     "region": "africa",
     "color": 4
   },
   "algeria": {
     "code": "dz",
-    "capital": "",
+    "capital": "algiers",
     "region": "africa",
     "color": 6
   },
   "sudan": {
     "code": "sd",
-    "capital": "",
+    "capital": "khartoum",
     "region": "africa",
     "color": 5
   },
   "morocco": {
     "code": "ma",
-    "capital": "",
+    "capital": "rabat",
     "region": "africa",
     "color": 5
   },
   "tunisia": {
     "code": "tn",
-    "capital": "",
+    "capital": "tunis",
     "region": "africa",
     "color": 3
   },
   "libya": {
     "code": "ly",
-    "capital": "",
+    "capital": "tripoli",
     "region": "africa",
     "color": 2
   },

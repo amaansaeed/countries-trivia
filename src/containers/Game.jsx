@@ -11,19 +11,13 @@ import MapColours from "../components/Map/MapColours"
 import MapZoom from "../components/Map/MapZoom"
 
 //  functions
-import {
-  checkGuess,
-  getCountryFromCode,
-  formatTime,
-  getRegion,
-  colourGuessed,
-  colourAll
-} from "../functions/functions"
+import { checkGuess, formatTime, getRegion, colourGuessed, colourAll } from "../functions/functions"
 
 //  data
 import countries from "../data/countries.json"
 import colours from "../data/colours.json"
 import Victory from "../components/Game/Victory"
+import Alert from "../components/Game/Alert"
 
 class Game extends Component {
   maxZoom = 5
@@ -31,11 +25,13 @@ class Game extends Component {
   correctAnswerBonusTime = 5 // In seconds
 
   state = {
+    countdown: 3,
     currentSearch: "",
     timeRemaining: this.timeRemaining,
     zoom: 1,
+    // alert: true,
     showHint: false,
-    pause: false,
+    pause: true,
     gameOver: false,
     victory: false,
     countriesGuessed: [],
@@ -133,14 +129,15 @@ class Game extends Component {
   }
 
   handleControllerClick = ({ currentTarget: input }) => {
-    console.log(input.name)
-
     if (input.name === "hint" && !this.state.pause) {
       this.setState({ showHint: !this.state.showHint })
     }
 
     if (input.name === "quit") {
-      this.setState({ timeRemaining: 0 })
+      const quit = window.confirm("Are you sure you want to give up?")
+      if (quit) {
+        this.setState({ pause: false, timeRemaining: 0 })
+      }
     }
 
     if (input.name === "pause") {
@@ -188,8 +185,11 @@ class Game extends Component {
 
             <Hint
               show={this.state.showHint}
-              hint={getCountryFromCode(this.props.selectedCountry, countries)}
+              hint={this.props.hint}
+              // hint={getCountryFromCode(this.props.selectedCountry, countries)}
             />
+
+            <Alert show={this.state.pause} message={this.state.countdown} />
           </React.Fragment>
         )}
 
@@ -207,9 +207,20 @@ class Game extends Component {
   }
 
   componentDidMount = () => {
-    this.game = setInterval(() => {
-      this.runGame()
+    const countDownTimer = setInterval(() => {
+      const { countdown } = this.state
+      this.setState({ countdown: countdown - 1 })
+      if (countdown === 1) {
+        this.setState({ pause: false, countdown: "Paused" })
+        clearInterval(countDownTimer)
+      }
     }, 1 * 1000)
+
+    setTimeout(() => {
+      this.game = setInterval(() => {
+        this.runGame()
+      }, 1 * 1000)
+    }, this.state.countdown * 1000)
   }
 
   componentWillUnmount = () => {
